@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="ae307c41-511c-4319-9ac1-a8b5c7f0a6df" activeEnvironment="Default environment" name="jira-rest-plugin.wadl [modified]" resourceRoot="${projectDir}" soapui-version="5.1.1" abortOnError="false" runType="SEQUENTIAL" lastOpened="2016-05-28T22:40:30.771+02:00" xmlns:con="http://eviware.com/soapui/config">
+<con:soapui-project id="ae307c41-511c-4319-9ac1-a8b5c7f0a6df" activeEnvironment="Default environment" name="jira-rest-plugin.wadl [modified]" resourceRoot="${projectDir}" soapui-version="5.1.1" abortOnError="false" runType="SEQUENTIAL" lastOpened="2016-05-28T23:25:48.762+02:00" xmlns:con="http://eviware.com/soapui/config">
   <con:settings>
     <con:setting id="ae307c41-511c-4319-9ac1-a8b5c7f0a6dffileName">jira-rest-plugin.wadl [modified]-soapui-project</con:setting>
   </con:settings>
