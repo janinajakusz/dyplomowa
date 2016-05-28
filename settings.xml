@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<con:soapui-project id="ae307c41-511c-4319-9ac1-a8b5c7f0a6df" activeEnvironment="Default environment" name="jira-rest-plugin.wadl [modified]" resourceRoot="${projectDir}" soapui-version="5.1.1" abortOnError="false" runType="SEQUENTIAL" lastOpened="2016-05-28T22:36:25.070+02:00" xmlns:con="http://eviware.com/soapui/config">
-  <con:settings/>
+<con:soapui-project id="ae307c41-511c-4319-9ac1-a8b5c7f0a6df" activeEnvironment="Default environment" name="jira-rest-plugin.wadl [modified]" resourceRoot="${projectDir}" soapui-version="5.1.1" abortOnError="false" runType="SEQUENTIAL" lastOpened="2016-05-28T22:38:21.031+02:00" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="ae307c41-511c-4319-9ac1-a8b5c7f0a6dffileName">jira-rest-plugin.wadl [modified]-soapui-project</con:setting>
+  </con:settings>
   <con:vcsConfiguration>
     <con:vcsName>Git</con:vcsName>
     <con:repositoryIdentifier>https://github.com/Jira-rest/dyplomowa.git</con:repositoryIdentifier>
