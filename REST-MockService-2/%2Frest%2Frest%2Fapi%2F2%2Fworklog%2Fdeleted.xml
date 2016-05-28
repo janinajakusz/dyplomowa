@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/rest/api/2/worklog/deleted" method="GET" resourcePath="/rest/rest/api/2/worklog/deleted" id="4e8cd430-6e64-4f47-a0fb-3a542e3b6cb0" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4e8cd430-6e64-4f47-a0fb-3a542e3b6cb0fileName">%2Frest%2Frest%2Fapi%2F2%2Fworklog%2Fdeleted</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="fe39a09b-e89d-4e98-a91b-44d5d3796d34" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

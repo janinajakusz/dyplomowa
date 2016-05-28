@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/auth/1/session" method="DELETE" resourcePath="/rest/auth/1/session" id="b12315ab-ef3c-4fab-9e08-973b65a51fdd" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="b12315ab-ef3c-4fab-9e08-973b65a51fddfileName">%2Frest%2Fauth%2F1%2Fsession1</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="9c6aec03-d97b-4f7d-8623-1f53a7309e60" httpResponseStatus="204" dataSource="">
+    <con:settings/>
+    <con:responseContent/>
+  </con:response>
+</con:restMockAction>

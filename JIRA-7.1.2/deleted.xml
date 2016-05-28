@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="deleted" path="rest/api/2/worklog/deleted" id="6c990bb3-e620-482c-a712-59b27fc70e18" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6c990bb3-e620-482c-a712-59b27fc70e18fileName">deleted</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="22c096e4-311a-4c2b-9c23-dbc32e32db00" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="d9e45d3c-269e-4cc3-b6d1-f876f05b624c" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://rest-wsb4.atlassian.net</con:endpoint>
+      <con:request/>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:jmsPropertyConfig/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

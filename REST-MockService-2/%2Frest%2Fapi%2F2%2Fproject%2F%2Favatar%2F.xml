@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/project//avatar/" method="DELETE" resourcePath="/rest/api/2/project//avatar/" id="91c1a0e8-736b-4dc9-9edd-644692b4dab4" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="91c1a0e8-736b-4dc9-9edd-644692b4dab4fileName">%2Frest%2Fapi%2F2%2Fproject%2F%2Favatar%2F</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="3b7a2588-867d-46bb-ac29-706edf430022" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

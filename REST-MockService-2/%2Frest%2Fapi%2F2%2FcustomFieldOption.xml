@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/customFieldOption" method="GET" resourcePath="/rest/api/2/customFieldOption" id="4d001241-0e9c-4548-af83-4db8d1e147ea" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4d001241-0e9c-4548-af83-4db8d1e147eafileName">%2Frest%2Fapi%2F2%2FcustomFieldOption</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="7763a13e-c4d1-4ed0-bc25-82b7d246622e" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

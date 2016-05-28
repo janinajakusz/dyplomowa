@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockService id="dee70658-f4d1-42cb-bdbd-04ef187dc64c" port="8080" path="/" host="localhost" name="REST MockService 1" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="dee70658-f4d1-42cb-bdbd-04ef187dc64cfileName">REST-MockService-1</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:headerValidator/>
+</con:restMockService>

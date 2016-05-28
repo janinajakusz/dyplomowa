@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="api/2/auditing/" path="api/2/auditing/" id="9dd25081-c5f2-4f9b-a460-01f1dbf475d1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="9dd25081-c5f2-4f9b-a460-01f1dbf475d1fileName">api%2F2%2Fauditing%2F</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:resource name="record" path="record" id="87ba4bbc-fda2-4332-b24a-c4aa41c1081f">
+    <con:settings/>
+    <con:parameters/>
+    <con:method name="GET - getRecords" id="502f7deb-dafd-4e53-8782-4c7a65613e9b" method="GET">
+      <con:settings/>
+      <con:parameters>
+        <con:parameter>
+          <con:name>offset</con:name>
+          <con:value xsi:nil="true"/>
+          <con:style>QUERY</con:style>
+          <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:int</con:type>
+          <con:default xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>limit</con:name>
+          <con:value xsi:nil="true"/>
+          <con:style>QUERY</con:style>
+          <con:type xmlns:xs="http://www.w3.org/2001/XMLSchema">xs:int</con:type>
+          <con:default xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>filter</con:name>
+          <con:value xsi:nil="true"/>
+          <con:style>QUERY</con:style>
+          <con:default xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>from</con:name>
+          <con:value xsi:nil="true"/>
+          <con:style>QUERY</con:style>
+          <con:default xsi:nil="true"/>
+        </con:parameter>
+        <con:parameter>
+          <con:name>to</con:name>
+          <con:value xsi:nil="true"/>
+          <con:style>QUERY</con:style>
+          <con:default xsi:nil="true"/>
+        </con:parameter>
+      </con:parameters>
+      <con:representation type="RESPONSE" id="">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:element xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:representation type="FAULT" id="">
+        <con:mediaType xsi:nil="true"/>
+        <con:status>400</con:status>
+        <con:params/>
+        <con:element xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:representation type="FAULT" id="">
+        <con:mediaType xsi:nil="true"/>
+        <con:status>403</con:status>
+        <con:params/>
+        <con:element xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:request name="Request 1" id="f15ea7f9-b4b8-4e9f-93b7-7fbce46c14a7" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://example.com:8080</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:request>
+    </con:method>
+    <con:method name="POST - addRecord" id="cc91f485-699d-4750-a8a3-145be5474f69" method="POST">
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="REQUEST" id="">
+        <con:mediaType>application/json</con:mediaType>
+        <con:params/>
+        <con:element>record</con:element>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:representation type="RESPONSE" id="">
+        <con:mediaType xsi:nil="true"/>
+        <con:status>201</con:status>
+        <con:params/>
+        <con:element xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:representation type="FAULT" id="">
+        <con:mediaType xsi:nil="true"/>
+        <con:status>400</con:status>
+        <con:params/>
+        <con:element xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:representation type="FAULT" id="">
+        <con:mediaType xsi:nil="true"/>
+        <con:status>403</con:status>
+        <con:params/>
+        <con:element xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:request name="Request 1" id="58fd752d-3fe2-4eb4-84c2-1987d35f5b92" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://example.com:8080</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:request>
+    </con:method>
+  </con:resource>
+</con:resource>

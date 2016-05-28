@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="4ad9a56c-3e34-4bd9-bb29-886722af3cd1" failOnError="true" failTestCaseOnErrors="true" keepSession="true" maxResults="0" name="Delete Project" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4ad9a56c-3e34-4bd9-bb29-886722af3cd1fileName">Delete-Project</con:setting>
+  </con:settings>
+  <con:testStep type="properties" name="Properties" id="69c0c4e8-90aa-4b60-9abd-43f941f2ee2f">
+    <con:settings/>
+    <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:properties>
+        <con:property>
+          <con:name>username</con:name>
+          <con:value>admin</con:value>
+        </con:property>
+        <con:property>
+          <con:name>password</con:name>
+          <con:value>rest-thebest</con:value>
+        </con:property>
+        <con:property>
+          <con:name>key</con:name>
+          <con:value>EX</con:value>
+        </con:property>
+      </con:properties>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Successful Login" id="e7c332c5-17ab-4ae4-b0b3-7c6bbabf5312">
+    <con:settings/>
+    <con:config service="JIRA 7.1.2" resourcePath="/rest/auth/1/session" methodName="Login" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Successful Login" id="fc96ad2b-c5b5-431c-9401-f030dbbb8adb" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+        </con:settings>
+        <con:endpoint>https://rest-wsb4.atlassian.net</con:endpoint>
+        <con:request>{
+    "username": "${Properties#username}",
+    "password": "${Properties#password}"
+}</con:request>
+        <con:originalUri>https://rest-wsb4.atlassian.net/rest/auth/1/session</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="14efb142-c01b-4ed0-bad9-073a99f17d9d" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>200</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Invalid HTTP Status Codes" id="ca0ed038-35cc-438c-b3a2-1a3f697f0375" name="Invalid HTTP Status Codes">
+          <con:configuration>
+            <codes>401, 403</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="GroovyScriptAssertion" id="bde8984f-c620-4940-8d6d-51924dcc4688" name="Script Assertion">
+          <con:configuration>
+            <scriptText>import groovy.json.JsonSlurper;
+def slurper = new JsonSlurper()
+def result = slurper.parseText(messageExchange.responseContent)
+assert result.session.name == "JSESSIONID"</scriptText>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="JsonPath Match" id="1424dc31-08fd-46c2-8450-8efcb5e90b2c" name="JsonPath Match">
+          <con:configuration>
+            <path>$.session.name</path>
+            <content>JSESSIONID</content>
+            <allowWildcards>false</allowWildcards>
+            <ignoreNamspaceDifferences>false</ignoreNamspaceDifferences>
+            <ignoreComments>false</ignoreComments>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters/>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:testStep type="restrequest" name="Delete Project" id="92d165fc-99ff-43bc-9da9-04bac25e154f">
+    <con:settings/>
+    <con:config service="JIRA 7.1.2" resourcePath="/rest/api/2/project/{projectIdOrKey}" methodName="DELETE - deleteProject" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+      <con:restRequest name="Delete Project" id="cfc24852-b794-42e5-bb5d-a3a8428d9d62" mediaType="application/json" postQueryString="false">
+        <con:settings>
+          <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Cookie" value="${Properties#Cookie}" xmlns="http://eviware.com/soapui/config"/></con:setting>
+        </con:settings>
+        <con:endpoint>https://rest-wsb4.atlassian.net</con:endpoint>
+        <con:request/>
+        <con:originalUri>https://rest-wsb4.atlassian.net/rest/api/2/project/EX</con:originalUri>
+        <con:assertion type="Valid HTTP Status Codes" id="772c37c1-0b35-47c7-9bc7-52d1c50ac813" name="Valid HTTP Status Codes">
+          <con:settings/>
+          <con:configuration>
+            <codes>204</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:assertion type="Invalid HTTP Status Codes" id="c634051a-82f1-4b94-b7ac-00c4d60d817d" name="Invalid HTTP Status Codes">
+          <con:configuration>
+            <codes>401, 403, 404</codes>
+          </con:configuration>
+        </con:assertion>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+        <con:jmsPropertyConfig/>
+        <con:parameters>
+          <entry key="projectIdOrKey" value="${Properties#key}" xmlns="http://eviware.com/soapui/config"/>
+        </con:parameters>
+      </con:restRequest>
+    </con:config>
+  </con:testStep>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

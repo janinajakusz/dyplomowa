@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/auditing/record" method="POST" resourcePath="/rest/api/2/auditing/record" id="0f7da24e-412d-47d9-b5c3-cacb1793ab55" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0f7da24e-412d-47d9-b5c3-cacb1793ab55fileName">%2Frest%2Fapi%2F2%2Fauditing%2Frecord1</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="f567c1be-bf5e-4b67-b006-aa70eddc0c74" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

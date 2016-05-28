@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/auth/1/session" method="GET" resourcePath="/rest/auth/1/session" id="17e65513-c339-4b3f-9114-362d11478134" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="17e65513-c339-4b3f-9114-362d11478134fileName">%2Frest%2Fauth%2F1%2Fsession</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="49f49eb5-5259-4935-a0f6-409078c734d8" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

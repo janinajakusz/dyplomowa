@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="cd138881-4ea1-42a4-b8b4-686dce4575a7" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="User Management" searchProperties="true" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="cd138881-4ea1-42a4-b8b4-686dce4575a7fileName">User-Management</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+</con:testCase>

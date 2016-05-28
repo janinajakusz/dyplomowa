@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/project" method="POST" resourcePath="/rest/api/2/project" id="c0e899a0-0550-4b20-9961-59eafb63140a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="c0e899a0-0550-4b20-9961-59eafb63140afileName">%2Frest%2Fapi%2F2%2Fproject1</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="d64110b7-7b9e-4a95-922a-9c58416c5011" httpResponseStatus="201" mediaType="application/json" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+   "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10314",
+   "id": 10314,
+   "key": "EX"
+}</con:responseContent>
+  </con:response>
+</con:restMockAction>

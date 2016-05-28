@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="api/2/priority" path="api/2/priority" id="16288598-5ca0-4424-a22e-85f65f759e7c" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="16288598-5ca0-4424-a22e-85f65f759e7cfileName">api%2F2%2Fpriority</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="GET - getPriorities" id="34c722c3-db97-47fb-a8ed-e204e73367c3" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:representation type="RESPONSE">
+      <con:mediaType>application/json</con:mediaType>
+      <con:params/>
+    </con:representation>
+  </con:method>
+</con:resource>

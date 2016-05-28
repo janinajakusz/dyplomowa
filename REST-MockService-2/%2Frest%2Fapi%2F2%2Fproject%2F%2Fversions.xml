@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/project//versions" method="GET" resourcePath="/rest/api/2/project//versions" id="4eb8af3b-c3c7-4c9b-80a2-dca050dc9b1a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="4eb8af3b-c3c7-4c9b-80a2-dca050dc9b1afileName">%2Frest%2Fapi%2F2%2Fproject%2F%2Fversions</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="f2cf64e3-165d-4290-bb14-87214bb42b19" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+  </con:response>
+</con:restMockAction>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="api/2/customFieldOption" path="api/2/customFieldOption" id="a7b02ab4-9a54-4cbd-895a-5428336b9ce0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="a7b02ab4-9a54-4cbd-895a-5428336b9ce0fileName">api%2F2%2FcustomFieldOption</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:resource name="{id}" path="{id}" id="7809c15f-5da0-4bb9-a5f5-86916de77627">
+    <con:settings/>
+    <con:parameters>
+      <con:parameter>
+        <con:name>id</con:name>
+        <con:value xsi:nil="true"/>
+        <con:style>TEMPLATE</con:style>
+        <con:default xsi:nil="true"/>
+      </con:parameter>
+    </con:parameters>
+    <con:method name="GET - getCustomFieldOption" id="0935b88d-befe-4f5d-8390-fe3855dad86c" method="GET">
+      <con:settings/>
+      <con:parameters/>
+      <con:representation type="RESPONSE" id="">
+        <con:mediaType>application/json</con:mediaType>
+        <con:status>200</con:status>
+        <con:params/>
+        <con:element>customFieldOption</con:element>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:representation type="FAULT" id="">
+        <con:mediaType xsi:nil="true"/>
+        <con:status>404</con:status>
+        <con:params/>
+        <con:element xsi:nil="true"/>
+        <con:description xsi:nil="true"/>
+      </con:representation>
+      <con:request name="Request 1" id="618833de-9e8c-4de1-a05c-cd8e975bd33a" mediaType="application/json">
+        <con:settings/>
+        <con:endpoint>http://example.com:8080</con:endpoint>
+        <con:credentials>
+          <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+          <con:authType>No Authorization</con:authType>
+        </con:credentials>
+        <con:parameters/>
+      </con:request>
+    </con:method>
+  </con:resource>
+</con:resource>

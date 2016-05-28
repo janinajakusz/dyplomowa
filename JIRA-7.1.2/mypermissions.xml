@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:resource name="mypermissions" path="api/2/mypermissions" id="6f10f816-7418-4c46-b089-1850cbc79a7a" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="6f10f816-7418-4c46-b089-1850cbc79a7afileName">mypermissions</con:setting>
+  </con:settings>
+  <con:parameters/>
+  <con:method name="Method 1" id="c06437cd-1ee3-43d6-8689-7a0dfbf83b6f" method="GET">
+    <con:settings/>
+    <con:parameters/>
+    <con:request name="Request 1" id="099d3c22-a376-4ca6-b4f0-7c740d96d325" mediaType="application/json">
+      <con:settings>
+        <con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting>
+      </con:settings>
+      <con:endpoint>https://rest-wsb4.atlassian.net</con:endpoint>
+      <con:request/>
+      <con:originalUri>https://rest-wsb4.atlassian.net/rest/api/2//mypermissions</con:originalUri>
+      <con:credentials>
+        <con:selectedAuthProfile>No Authorization</con:selectedAuthProfile>
+        <con:authType>No Authorization</con:authType>
+      </con:credentials>
+      <con:jmsConfig JMSDeliveryMode="PERSISTENT"/>
+      <con:jmsPropertyConfig/>
+      <con:parameters/>
+    </con:request>
+  </con:method>
+</con:resource>

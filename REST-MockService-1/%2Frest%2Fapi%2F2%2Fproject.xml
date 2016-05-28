@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/api/2/project" method="GET" resourcePath="/rest/api/2/project" id="53b2ea77-2b76-4931-9b70-036baee2f079" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="53b2ea77-2b76-4931-9b70-036baee2f079fileName">%2Frest%2Fapi%2F2%2Fproject</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 2 [authenticated]</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1 [not authenticated]" id="6dc538ed-69db-4813-95d1-8e23552542bb" httpResponseStatus="200" dataSource="">
+    <con:settings/>
+    <con:responseContent>&lt;Empty JSON content></con:responseContent>
+  </con:response>
+  <con:response name="Response 2 [authenticated]" id="e6651f10-519d-443c-a05b-d57b352317e5" httpResponseStatus="200" mediaType="application/json" dataSource="">
+    <con:settings/>
+    <con:responseContent><![CDATA[[
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10100",
+      "id": "10100",
+      "key": "BP",
+      "name": "businessProject",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10100&avatarId=10204",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10100&avatarId=10204",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10100&avatarId=10204",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10100&avatarId=10204"
+      },
+      "projectTypeKey": "business"
+   },
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10200",
+      "id": "10200",
+      "key": "PD",
+      "name": "Praca Dyplomowa",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10200&avatarId=10600",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10200&avatarId=10600",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10200&avatarId=10600",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10200&avatarId=10600"
+      },
+      "projectTypeKey": "business"
+   },
+      {
+      "expand": "description,lead,url,projectKeys",
+      "self": "https://rest-wsb4.atlassian.net/rest/api/2/project/10000",
+      "id": "10000",
+      "key": "TP",
+      "name": "testProject",
+      "avatarUrls":       {
+         "48x48": "https://rest-wsb4.atlassian.net/secure/projectavatar?pid=10000&avatarId=10201",
+         "24x24": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=small&pid=10000&avatarId=10201",
+         "16x16": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=xsmall&pid=10000&avatarId=10201",
+         "32x32": "https://rest-wsb4.atlassian.net/secure/projectavatar?size=medium&pid=10000&avatarId=10201"
+      },
+      "projectTypeKey": "software"
+   }
+]]]></con:responseContent>
+    <con:header>
+      <con:name>Cookie</con:name>
+      <con:value>${Properties#Cookie}</con:value>
+    </con:header>
+  </con:response>
+</con:restMockAction>

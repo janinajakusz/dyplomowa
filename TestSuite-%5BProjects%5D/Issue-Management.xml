@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCase id="36b2bec1-ac3f-4ccd-980d-5684dcd0f2e3" failOnError="true" failTestCaseOnErrors="true" keepSession="true" maxResults="0" name="Issue Management" searchProperties="true" timeout="0" wsrmEnabled="false" wsrmVersion="1.0" wsrmAckTo="" amfAuthorisation="false" amfEndpoint="" amfLogin="" amfPassword="" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="36b2bec1-ac3f-4ccd-980d-5684dcd0f2e3fileName">Issue-Management</con:setting>
+  </con:settings>
+  <con:properties/>
+  <con:reportParameters/>
+  <con:breakPoints>
+    <con:testStepId>0c5f0863-95f0-404a-b318-daf62dc7a6bf</con:testStepId>
+    <con:status>NONE</con:status>
+    <con:properties/>
+  </con:breakPoints>
+</con:testCase>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:restMockAction name="/rest/auth/1/session" method="POST" resourcePath="/rest/auth/1/session" id="0b55c92e-cb8a-409f-b70b-0c22967a3e2a" xmlns:con="http://eviware.com/soapui/config">
+  <con:settings>
+    <con:setting id="0b55c92e-cb8a-409f-b70b-0c22967a3e2afileName">%2Frest%2Fauth%2F1%2Fsession2</con:setting>
+  </con:settings>
+  <con:defaultResponse>Response 1</con:defaultResponse>
+  <con:dispatchStyle>SEQUENCE</con:dispatchStyle>
+  <con:dispatchConfig/>
+  <con:dispatchPath xsi:nil="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"/>
+  <con:dispatchXPath/>
+  <con:response name="Response 1" id="0252f9b8-692d-4c1a-ba5f-e6feedf74132" httpResponseStatus="200" mediaType="application/json" dataSource="">
+    <con:settings/>
+    <con:responseContent>{
+   "session":    {
+      "name": "JSESSIONID",
+      "value": "6D8512AA363356B0008CB007D81E1E93"
+   },
+   "loginInfo":    {
+      "failedLoginCount": 1,
+      "loginCount": 240,
+      "lastFailedLoginTime": "2016-04-02T22:54:19.344+0200",
+      "previousLoginTime": "2016-04-04T22:03:00.350+0200"
+   }
+}</con:responseContent>
+  </con:response>
+</con:restMockAction>
