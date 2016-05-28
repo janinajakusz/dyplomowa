@@ -3,6 +3,7 @@
   <con:settings>
     <con:setting id="3445f267-4525-437e-93e1-916552ccf913fileName">Session</con:setting>
   </con:settings>
+  <con:savedRecentRuns>1</con:savedRecentRuns>
   <con:testStep type="properties" name="Properties" id="8ce6459b-f65d-4703-8e70-57489f8f509f">
     <con:settings/>
     <con:config xsi:type="con:PropertiesStep" saveFirst="true" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
